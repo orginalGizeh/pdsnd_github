@@ -25,7 +25,7 @@ def get_filters():
         cities_dict = {'ch':'chicago', 'ny':'new york city', 'wa':'washington'}
         cities = pd.Series(cities_dict)
         while city not in cities:
-            city = input("==> ")
+            city = input("==> ").strip().lower()
             #get user input city even if he/she type for example ch or chicago
             if city in cities.index or city in cities.values:
                 if city in cities.index:
@@ -43,7 +43,7 @@ def get_filters():
         list_choice_filter = ['month', 'day', 'both', 'none']
         choice_filter = ''
         while choice_filter not in list_choice_filter:
-            choice_filter = input("==> ")
+            choice_filter = input("==> ").strip().lower()
             
             if choice_filter in list_choice_filter:
                 print("Filter\'s  choice Accepted !")
@@ -77,7 +77,7 @@ def user_input_day():
     day=''
     days = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
     while day not in days:
-        day = input("==> ")
+        day = input("==> ").strip().lower()
         print()
         if day in days or day=='all':
             print("Choice Accepted !")
@@ -96,7 +96,7 @@ def user_input_month():
     month=''
     months = ['january', 'february', 'march', 'april', 'may', 'june']
     while month not in months:
-        month = input("==> ")
+        month = input("==> ").strip().lower()
         if month in months or month=='all':
             print("Choice Accepted !")
             print()
@@ -167,7 +167,7 @@ def time_stats(df, choice_filter):
     start_time = time.time()
     # display the most common month
     common_month = df['month'].mode().to_numpy()
-        print("the most common month :" + str(common_month[0]))
+    print("the most common month :" + str(common_month[0]))
     # display the most common day of week
 
 

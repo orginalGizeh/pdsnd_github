@@ -8,6 +8,7 @@
    4. [Presentation of the bikeshare](#presentation)
    5. [The Datasets used](#dataset)
    6. [How the program work ?](#work)
+   7. [Software used](#soft)
 
 
 ## **1. Date of creation <a id="date"></a>**
@@ -56,6 +57,13 @@
    4. (If they chose day) Which day - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?
 
 The answers to the questions above will determine the city and timeframe on which you'll do data analysis. After filtering the dataset, users will see the statistical result of the data, and choose to start again or exit.
+
+## **7. Software used <a id="soft"></a>**
+I have used :
+   * Python 3
+   * NumPy, and pandas installed using Anaconda
+   * A text editor Visual Studio code.
+   * A terminal application
 
 
    
